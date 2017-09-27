@@ -1,0 +1,31 @@
+body {
+  background-image: url('../assets/background.jpg');
+  height: 100%;
+  background-size: cover;
+  background-repeat: none;
+  opacity: 0.8;
+}
+
+.App {
+  text-align: center;
+  padding: 5%;
+}
+
+.right-button {
+  cursor: pointer;
+  float: right;
+}
+
+.list-item {
+  display: inline-block
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

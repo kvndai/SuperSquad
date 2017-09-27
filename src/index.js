@@ -9,7 +9,7 @@ import rootReducer from "./reducers/index";
 import { addCharactersById } from './actions';
 
 const store = createStore(rootReducer);
-console.log('store.getState()', store.getState());
+// console.log('store.getState()', store.getState());
 store.subscribe(() => console.log("store", store.getState()))
 store.dispatch(addCharactersById(2))
 

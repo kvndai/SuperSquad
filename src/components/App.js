@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import CharacterList from './CharacterList';
+import HeroList from './HeroList';
+import SquadStats from './SquadStats';
+
 import logo from "../assets/logo.svg";
-import "./App.css";
+import "../styles/index.css";
 
 class App extends Component {
   render() {
@@ -8,8 +12,17 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>SuperSquad</h2>
         </div>
+        <div className="col-md-4">
+          <CharacterList />
+        </div>
+        <div className="col-md-4">
+          <HeroList />
+        </div>
+        <div className="col-md-4">
+          <SquadStats />
+        </div>
+
       </div>
     );
   }
